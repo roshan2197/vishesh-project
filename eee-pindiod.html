@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
+    <title>Projects</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar_top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <strong>MREC</strong> <br><small>Students Guide</small> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects List
+                        </a>
+                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="cse-projects-list.html">CSE</a>
+                            <a class="dropdown-item" href="ece-projects-list.html">ECE</a>
+                            <a class="dropdown-item" href="eee-projects-list.html">EEE</a>
+                            <a class="dropdown-item" href="it-projects-list.html">IT</a>
+                            <a class="dropdown-item" href="mec-projects-list.html">MEC</a>
+                            <a class="dropdown-item" href="civil-projects-list.html">CIVIL</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="references.html">References</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="main-content">
+        <h1>PIN Diode Based Fire Sensor</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Q6QrmURl84E" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <p>Here is a PIN diode based fire sensor that activates an alarm when it detects fire. Thermistor based fire
+            alarms have a drawback; the alarm turns on only if the fire heats the thermistor in close vicinity. In this
+            circuit, a sensitive PIN diode is used as a fire sensor for a longer-range fire detection.
+        </p>
+        <img src="images/pin1.jpg" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+        <img src="images/pin2.jpg" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+        <p>
+            It detects visible light and infrared (IR) in the range of 430nm – 1100nm. So visible light and IR from the
+            fire can easily activate the sensor to trigger the alarm. It also detects sparks in the mains wiring and, if
+            these persist, it gives a warning alarm. <br>
+
+            It is an ideal protective device for showrooms, lockers, record rooms and so on. Author’s prototype is shown
+            in Fig. 1.
+        </p>
+        <h3>PIN diode based fire sensor</h3>
+        <p>
+            PIN diode BPW34 (Fig. 2) is used in the circuit as light and IR sensor. BPW34 is a 2-pin photodiode with
+            anode (A) and cathode (K). The anode end can easily be identified from the top-view flat surface of the
+            photodiode. A small solder point to which a thin wire is connected is the anode and the other one is the
+            cathode terminal.
+        </p>
+        <img src="images/pin3.jpg" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+        <p>BPW34 is a tiny PIN photodiode or mini solar cell with radiant sensitive surface that generates 350mV DC
+            open-circuit voltage when exposed to 900nm light. It is sensitive to natural sunlight and also to light from
+            fire. So it is ideal for use as a light sensor.
+            BPW34 photodiode can be used in zero-bias as well as reverse-bias states. Its resistance decreases when
+            light falls on it.</p>
+        <h3>Circuit diagram</h3>
+        <p>Circuit diagram of the PIN diode based fire sensor is shown in Fig. 3. It is built around 9V battery, PIN
+            diode BPW34 (D1), op-amp CA3140 (IC1), counter CD4060 (IC2), transistors BC547 (T1 and T2), a piezo buzzer
+            (PZ1) and a few other components.</p>
+        <img src="images/pin4.jpg" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+        <h3>Circuit operation</h3>
+        <p>
+            Large-value feedback resistor R1 sets the gain of the transimpedance amplifier since it is in inverting
+            configuration. Connection of non-inverting input to ground provides low impedance load for the photodiode,
+            which keeps the photodiode voltage low. <br>
+
+            The photodiode operates in the photovoltaic mode with no external bias. Feedback of the op-amp keeps the
+            photodiode current equal to the feedback current through R1. So the input offset voltage due to the
+            photodiode is very low in this self-biased photovoltaic mode. This permits a large gain without any
+            large-output offset voltage. This configuration is selected to get large gain in low-light conditions. <br>
+
+            Normally, in ambient light condition, photocurrent from the PIN diode is very low; it keeps output of IC1
+            low. When the PIN diode detects visible light or IR from fire, its photo current increases and
+            transimpedance amplifier IC1 converts this current to corresponding output voltage. High output from IC1
+            activates transistor T1 and LED1 glows. This indicates that the circuit has detected fire. When T1 conducts,
+            it takes reset pin 12 of IC2 to ground potential and CD4060 starts oscillating. <br>
+            IC2 is a binary counter with ten outputs that turn high one by one when it oscillates due to C1 and R6.
+            Oscillation of IC2 is indicated by the blinking of LED2. When output Q6 (pin 4) of IC2 turns high after 15
+            seconds, T2 conducts and activates piezo buzzer PZ1, and LED3 also glows. The alarm repeats again after 15
+            seconds if fire persists. <br>
+
+            You can also turn on an AC alarm that produces a loud sound by replacing PZ1 with a relay circuitry (not
+            shown here). The AC alarm is activated through contacts of the relay used for this purpose. <br>
+        </p>
+
+
+    </div>
+    </div>
+
+    <div class="code-btn">
+        <a href="/cse-projects-list.html" target="_blank" class="btn btn-primary">More Projects</a>
+    </div>
+
+    <div class="container">
+        <label for="comment" name="comment">Have Doubt Comment Below</label>
+        <textarea id="comment"></textarea>
+        <button id="addComments">Add Comment</button>
+        <div id="allComments"></div>
+    </div>
+    <script src="js/comment.js"></script>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom links-list">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="main-context">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
+                        <!-- Content -->
+                        <h6 class="mb-3">
+                            <i class="fas fa-gem me-3"></i>MREC <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <small>Students Guide
+                            </small>
+                            <hr>
+                            <p>
+                                This is website for beginners who wants to start their good startup of their carrier
+                                <br>
+                                <hr>
+                                Official website for Vishesh 2k21
+                            </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-3">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">mrec.ac.in</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecacademics.com</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecstudentguide.com</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecexams.com</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Medchal</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            college@mrec.ac.in
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 91 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 91 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 copyright-mrec" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="#">MREC</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script>(function () { var js, fs, d = document, id = "tars-widget-script", b = "https://tars-file-upload.s3.amazonaws.com/bulb/"; if (!d.getElementById(id)) { js = d.createElement("script"); js.id = id; js.type = "text/javascript"; js.src = b + "js/widget.js"; fs = d.getElementsByTagName("script")[0]; fs.parentNode.insertBefore(js, fs) } })(); window.tarsSettings = { "convid": "2nmLJr" };</script>
+
+</html>

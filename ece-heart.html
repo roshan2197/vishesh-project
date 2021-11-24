@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
+    <title>Projects</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar_top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <strong>MREC</strong> <br><small>Students Guide</small> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects List
+                        </a>
+                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="cse-projects-list.html">CSE</a>
+                            <a class="dropdown-item" href="ece-projects-list.html">ECE</a>
+                            <a class="dropdown-item" href="eee-projects-list.html">EEE</a>
+                            <a class="dropdown-item" href="it-projects-list.html">IT</a>
+                            <a class="dropdown-item" href="mec-projects-list.html">MEC</a>
+                            <a class="dropdown-item" href="civil-projects-list.html">CIVIL</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="references.html">References</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="main-content">
+        <h1>Smart Blood Oxygen And Heart Rate Monitor With Automatic Data Saving System</h1>
+        <h3>Video Reference : </h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sTkroVP3y0k" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <p>In this DIY project, we will try to make a Smart Health Monitoring Device that can measure SpO2 (percentage of oxygen in the blood) and heart rate. This wearable device can be used by athletes to monitor their heart rate and blood oxygen levels during workout. Best part of this project is that you can connect this device to an app that automatically saves all the sensor data to a text file.
+    </p>
+    <img src="/images/heart-main.png" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+
+       <h3>Components:</h3>
+       <ul>
+           <li>Components:</li>
+           <li>Any Arduino Dev board (Arduino Uno, Nano or pro mini)</li>
+           <li>OLED Display (SSD 1306).</li>
+           <li>Bluetooth HC 05</li>
+           <li>Wires</li>
+       </ul>
+       <h3>Coding</h3>
+       <p>First of all, we need to install the required library to the Arduino IDE. Go to tools and open the library manager and search these libraries (“Addafurit GFX”, “Oak Oled”, “Max 30100”) and install these libraries. <br>
+
+        Once we have installed the libraries, we can start coding. In the first part of the code, we have included the required libraries in code.</p>
+
+        <img src="/images/heaart-first.png" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+
+        <p>After this, we will add a short bitmap code that has a heart symbol logo. In the next part, we have a function that displays the heart bitmap logo whenever your heart beats (Refer Fig 3). Now, we can create a setup function and set the baud rate of Bluetooth along with other settings. (R8er Fig 4)</p>
+
+    <img src="/images/heaart-2.png" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+    <img src="/images/heaart-3.png" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+    <img src="/images/heaart-4.png" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+    <p>Then we will create a loop function that updates the readings of sensor and displays those readings on OLED screen.
+    </p>
+    <img src="/images/heaart-5.png" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+    <img src="/images/heaart-6.png" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+    <h3>App Making</h3>
+    <p>We are done with coding and connection parts, so let’s build the app. We are going to use MIT App Inventor. First, we will create a layout and add the following components to it.
+    </p>
+    <img src="/images/heaart-7.png" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+    <img src="/images/heaart-8.png" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+    <h3>Testing</h3>
+    <p>After connecting the components, recheck each connection. Then power the Arduino. When you power the Arduino, you get a message on OLED screen which says – “Initializing Sensor.” After a few seconds when Arduino detects the sensor, it shows the reading on the screen. Initially, it will show 0 or false reading. Now place your finger on the sensor and let it detect your heartbeat rate and blood oxygen level. After a few seconds, your SpO2 (oxygen percentage in the blood) and heartbeat rate will be displayed on the OLED screen. Next, open the app that you have made and connect it to the Bluetooth. After it is connected, you can see the blood oxygen percentage (SpO2) and pulse rate in the app. The app automatically saves the sensor data in the form of text file, which you can share with a doctor or use it for analysis.
+
+    </p>
+    <img src="/images/heaart-9.png" alt="img" style="height: 100%; width: 40% !important; margin: 0 0 30px 0; ">
+</div>
+
+    <div class="code-btn">
+        <a href="/ece-projects-list.html" target="_blank" class="btn btn-primary">More Projects</a>
+    </div>
+
+    <div class="container">
+        <label for="comment" name="comment">Have Doubt Comment Below</label>
+        <textarea id="comment"></textarea>
+        <button id="addComments">Add Comment</button>
+        <div id="allComments"></div>
+    </div>
+    <script src="js/comment.js"></script>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom links-list">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="main-context">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
+                        <!-- Content -->
+                        <h6 class="mb-3">
+                            <i class="fas fa-gem me-3"></i>MREC <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <small>Students Guide
+                            </small>
+                            <hr>
+                            <p>
+                                This is website for beginners who wants to start their good startup of their carrier
+                                <br>
+                                <hr>
+                                Official website for Vishesh 2k21
+                            </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-3">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">mrec.ac.in</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecacademics.com</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecstudentguide.com</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecexams.com</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Medchal,Hyderabad</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            college@mrec.ac.in
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 91 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 91 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 copyright-mrec" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="#">MREC</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script>(function () { var js, fs, d = document, id = "tars-widget-script", b = "https://tars-file-upload.s3.amazonaws.com/bulb/"; if (!d.getElementById(id)) { js = d.createElement("script"); js.id = id; js.type = "text/javascript"; js.src = b + "js/widget.js"; fs = d.getElementsByTagName("script")[0]; fs.parentNode.insertBefore(js, fs) } })(); window.tarsSettings = { "convid": "2nmLJr" };</script>
+
+</html>

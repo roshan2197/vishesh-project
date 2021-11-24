@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+body {
+  /* background: linear-gradient(-45deg, #ff8caf, #ffa8fb, #acf8b3, #aab3ff);
+  background-size: 400% 400%; */
+  /* animation: gradient 3s ease infinite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+.navbar-brand {
+  padding-bottom: 5px !important;
+  line-height: 20px;
+}
+
+.bg-light {
+  /* background-color: rgb(217, 224, 255); */
+  background-color: #009dae !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.navbar-nav {
+  text-align: center !important;
+}
+
+input[type="text"]:invalid {
+  border: red solid 1px;
+}
+
+.container {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 2px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.container > label {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+#comment {
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 15px 15px 0 15px;
+  border: 2px solid;
+}
+#addComments {
+  /* width: 20%; */
+  margin: 20px;
+  padding: 5px 10px;
+  background-color: darkblue;
+  color: #ffffff;
+  align-self: flex-end;
+  border-radius: 5px;
+  border: none;
+}
+
+.wrapper > button {
+  border-radius: 5px;
+  border: none;
+  margin-right: 5px;
+  margin: 10px 5px 10px 0;
+  padding: 5px 10px;
+  background-color: darkblue;
+  color: white;
+}
+
+footer {
+  width: 100% !important;
+  margin-top: 50px;
+}
+
+.main-context .container {
+  /* background-color: aliceblue !important; */
+  background-color: #c2fff9;
+  padding-top: 10px !important;
+}
+
+.links-list {
+  z-index: 1;
+  padding-bottom: -20px !important;
+}
+
+code {
+  color: blue !important;
+  font-family: "Courier New", Courier, monospace;
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
+    <title>Projects</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar_top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <strong>MREC</strong> <br><small>Students Guide</small> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects List
+                        </a>
+                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="cse-projects-list.html">CSE</a>
+                            <a class="dropdown-item" href="ece-projects-list.html">ECE</a>
+                            <a class="dropdown-item" href="eee-projects-list.html">EEE</a>
+                            <a class="dropdown-item" href="it-projects-list.html">IT</a>
+                            <a class="dropdown-item" href="mec-projects-list.html">MEC</a>
+                            <a class="dropdown-item" href="civil-projects-list.html">CIVIL</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="references.html">References</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="main-content">
+        <h1>Face Recognition Using OpenCV(Python)</h1>
+        <h3>Video Reference :</h3>
+        <iframe width="560" height="450" src="https://www.youtube.com/embed/PmZ29Vta7Vc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <p>In this beginner’s project, we will learn how to implement real-time human face recognition. We will build
+            this project in Python using OpenCV. <br>
+            In this project, we will learn how to implement real-time human face recognition. We will build this
+            project using <b> Haar Cascade Classifier algorithms in OpenCV</b></p>
+        <img src="/CSE projects/Images/Face-Recognition-Python-Project.gif" alt="img">
+
+        <p>
+        <h3>Face Recognition Python Project:</h3><br>
+        Face Recognition is a technology in computer vision. In Face recognition / detection we locate and visualize the
+        human faces in any digital image. <br>
+
+        It is a subdomain of Object Detection, where we try to observe the instance of semantic objects. These objects
+        are of particular class such as animals, cars, humans, etc. Face Detection technology has importance in many
+        fields like marketing and security.<br>
+        <br>
+        <h3>Cascade Classifiers and Haar Features:</h3><br>
+        Cascade Classifiers and Haar Features are the methods used for Object Detection.<br>
+
+        It is a machine learning algorithm where we train a cascade function with tons of images. These images are in
+        two categories: positive images containing the target object and negative images not containing the target
+        object.<br>
+
+        There are different types of cascade classifiers according to different target objects. In our project, we will
+        use a classifier that considers the human face to recognize it as the target object.<br>
+
+        Haar Feature selection technique has a target to extract human face features. Haar features are like convolution
+        kernels. These features are different permutations of black and white rectangles. In each feature calculation,
+        we find the sum of pixels under white and black rectangles.<br></p>
+
+        <img src="/CSE projects/Images/Face-Recognition-Python-Project.gif" alt="img">
+        <p>
+            Haar-cascade Detection in OpenCV:
+            OpenCV provides pre-trained models on Haar features and Cascade classifiers. These models are located in
+            OpenCV installation. You can find the necessary XML files at: <br>
+            <code>/home/<username>/.local/lib/<python-version>/site-packages/cv2/data/</code> <br>
+            In the below code we will see how to use these pre-trained Haar cascade models to detect Human Face. We will
+            implement a real-time human face recognition with python
+
+        </p>
+        <h2 class="head-py">Steps to implement human face recognition with Python & OpenCV:
+        </h2>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        1. Import
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <code>import cv2 <br>
+                    import os</code>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        2. Initialize the classifier
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <code>cascPath=os.path.dirname(cv2.__file__)+"/data/haarcascade_frontalface_default.xml" <br>
+                    faceCascade = cv2.CascadeClassifier(cascPath)</code>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        3. Apply faceCascade on webcam frames
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <pre> <code>
+video_capture = cv2.VideoCaptur
+while True:
+# Capture frame-by-frame
+ret, frames = video_capture.read()
+gray = cv2.cvtColor(frames, cv2.COLOR_BGR2GRAY)
+faces = faceCascade.detectMultiScale(
+    gray,
+    scaleFactor=1.1,
+    minNeighbors=5,
+    minSize=(30, 30),
+    flags=cv2.CASCADE_SCALE_IMAGE
+)
+# Draw a rectangle around the faces
+for (x, y, w, h) in faces:
+    cv2.rectangle(frames, (x, y), (x+w, y+h), (0, 255, 0), 2)
+# Display the resulting frame
+cv2.imshow('Video', frames)
+if cv2.waitKey(1) & 0xFF == ord('q'):
+    break</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        4. Release the capture frames
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        <code>
+                            video_capture.release() <br>
+                            cv2.destroyAllWindows()
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        5. Done and Run
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFive">
+                    <div class="accordion-body">
+                        <code>python3 face_detection.py</code> </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="code-btn">
+        <a href="/cse-projects-list.html" target="_blank" class="btn btn-primary">More Projects</a>
+    </div>
+
+    <div class="container">
+        <label for="comment" name="comment">Have Doubt Comment Below</label>
+        <textarea id="comment"></textarea>
+        <button id="addComments">Add Comment</button>
+        <div id="allComments"></div>
+    </div>
+    <script src="js/comment.js"></script>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom links-list">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="main-context">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
+                        <!-- Content -->
+                        <h6 class="mb-3">
+                            <i class="fas fa-gem me-3"></i>MREC <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <small>Students Guide
+                            </small>
+                            <hr>
+                            <p>
+                                This is website for beginners who wants to start their good startup of their carrier
+                                <br>
+                                <hr>
+                                Official website for Vishesh 2k21
+                            </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-3">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">mrec.ac.in</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecacademics.com</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecstudentguide.com</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecexams.com</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Medchal,Hyderabad</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            college@mrec.ac.in
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 91 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 91 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 copyright-mrec" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="#">MREC</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script>(function () { var js, fs, d = document, id = "tars-widget-script", b = "https://tars-file-upload.s3.amazonaws.com/bulb/"; if (!d.getElementById(id)) { js = d.createElement("script"); js.id = id; js.type = "text/javascript"; js.src = b + "js/widget.js"; fs = d.getElementsByTagName("script")[0]; fs.parentNode.insertBefore(js, fs) } })(); window.tarsSettings = { "convid": "2nmLJr" };</script>
+
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
+    <title>Projects</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar_top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <strong>MREC</strong> <br><small>Students Guide</small> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects List
+                        </a>
+                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="cse-projects-list.html">CSE</a>
+                            <a class="dropdown-item" href="ece-projects-list.html">ECE</a>
+                            <a class="dropdown-item" href="eee-projects-list.html">EEE</a>
+                            <a class="dropdown-item" href="it-projects-list.html">IT</a>
+                            <a class="dropdown-item" href="mec-projects-list.html">MEC</a>
+                            <a class="dropdown-item" href="civil-projects-list.html">CIVIL</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="references.html">References</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="main-content">
+        <h1>Fingerprint Recognition using ML</h1>
+        <h3>Video Reference : </h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9E2u_hWTnDg" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <p>Biometric systems are now commonly used in different parts of everyday life such as building access and
+            computer login. Fingerprint detection is one of the most prevalent methods for personal identification
+            within all biometric systems [1]. Throughout the world, fingerprint recognition is accepted by a large part
+            of the population because of its fast, secure, and easy way of personal identification. Fingerprint is the
+            most interesting and oldest human identity used for recognition of individual. In the early twentieth
+            century, fingerprint was formally accepted as valid signs of identity by law-enforcement agencies.</p>
+        <img src="/CSE projects/Images/fingerprint.jpg" alt="img">
+
+        <p>
+            Fingerprints in the crime scene plays an important role to identify the criminal involved in the crime.
+            Crime scene images (CSI) are images taken from the crime spot. When crime is occurred, the investigator
+            takes both latent and patent sample of fingerprints left behind. The patent fingerprints are visible by
+            naked eye, so they are simply photographed. But latent fingerprints [1] are invisible and these samples are
+            more difficult to perceptible. These samples can be lifted through different techniques. The use of
+            cyanoacrylate vapors which sticks to prints and make them visible in the present of normal light. This
+            method is much difficult, so normally in crime scene, the investigators apply a [2] fine dusting powder
+            (aluminium dust or black granular) to the surface in which fingerprints to be extracted. The dust actually
+            sticks to the fingerprint then they use clear tape to lift the fingerprint. After the lifting the
+            fingerprints, the prints are scanned and saved in the digital image form. The fingerprints taken from the
+            crime scene is unintentionally made and these images are noisy or partial prints and difficult to identify.
+        </p>
+
+        <img src="/images/3-Figure2-1.png" alt="img">
+        <p> <b>Arches</b> - create a wave-like pattern and include plain arches and tented arches. Tented arches rise to a sharper point than plain arches. Arches make up about five percent of all pattern types.
+        <br> <b>Whorls</b> - form circular or spiral patterns, like tiny whirlpools. There are four groups of whorls: plain (concentric circles), central pocket loop (a loop with a whorl at the end), double loop (two loops that create an S-like pattern) and accidental loop (irregular shaped). Whorls make up about 35 percent of pattern types.
+        <br> <b>Loops</b> - prints that recurve back on themselves to form a loop shape. Divided into radial loops (pointing toward the radius bone, or thumb) and ulnar loops (pointing toward the ulna bone, or pinky), loops account for approximately 60 percent of pattern types. </p>
+    <p>
+            In this paper, we have shown different methods and techniques which can be used to identify a person through
+            its fingerprint. <br> These mentioned methods conclude that the fingerprint is fast and accurate for more
+            reliable and secure system. Future research work can be carried out to improve the quality of the image by
+            improving the image enhancement technique and develop a better matching technique. <br> Taking advantage of
+            the
+            segmentation features, learning capability of classifier, the future work will be focused to achieve an
+            efficient detection rate for partial fingerprint by applying deep learning approach.
+        </p>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        1. Import
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <code>import cv2 <br>
+                            import numpy as np <br>
+                            import os <br></code>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        2. Viewing the test file
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        <code>test_original = cv2.imread("TEST_1.tif") <br>
+                            cv2.imshow("Original", cv2.resize(test_original, None, fx=1, fy=1)) <br>
+                            cv2.waitKey(0) <br>
+                            cv2.destroyAllWindows()</code>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        3. Matching with the database
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        <p>
+                            We are going to use SIFT (Scale-Invariant Feature Transform) algorithm here. To learn more
+                            about this topic, you can visit this site. We use it to extract key-points and detect
+                            descriptors for the best-retained features. So, here we shall use it to identify the
+                            key-points and descriptors of both the test image and database images.
+                        </p>
+                        <pre>
+                            <code>
+for file in [file for file in os.listdir("database")]:
+
+fingerprint_database_image = cv2.imread("./database/"+file)
+
+sift = cv2.xfeatures2d.SIFT_create()
+
+keypoints_1, descriptors_1 = sift.detectAndCompute(test_original, None)
+keypoints_2, descriptors_2 = sift.detectAndCompute(fingerprint_database_image, None)
+</code></pre>
+                        <p>
+                            After the detection and the computation are over, we start the matching algorithm. We shall
+                            use the FlannBasedMatcher() functionality here about which you can learn from here. So, this
+                            interface helps us in performing a quick but efficient matching using the Cluster and Search
+                            algorithm. We shall maintain an array of such points that are given as output in the match.
+                        </p>
+                        <pre>
+                    <code>
+matches = cv2.FlannBasedMatcher(dict(algorithm=1, trees=10), 
+dict()).knnMatch(descriptors_1, descriptors_2, k=2)
+match_points = []
+              
+for p, q in matches:
+if p.distance < 0.1*q.distance:
+match_points.append(p)
+                    </code>
+                </pre>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        4. Detecting the ID for the fingerprint matched
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingFour">
+                    <div class="accordion-body">
+                        <p>
+                            In the end, we need to define the keypoint detection margin and then visualize the output
+                            after drawing the matching keypoints. So here we shall use the cv2.drawMatches() function
+                            for this purpose.
+                        </p>
+                        <pre> <code>
+keypoints = 0
+if len(keypoints_1) <= len(keypoints_2):
+   keypoints = len(keypoints_1)            
+else:
+   keypoints = len(keypoints_2)
+if (len(match_points) / keypoints)>0.95:
+   print("% match: ", len(match_points) / keypoints * 100)
+   print("Figerprint ID: " + str(file)) 
+   result = cv2.drawMatches(test_original, keypoints_1, fingerprint_database_image, 
+                            keypoints_2, match_points, None) 
+   result = cv2.resize(result, None, fx=2.5, fy=2.5)
+cv2.imshow("result", result)
+   cv2.waitKey(0)
+   cv2.destroyAllWindows()
+   break;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="code-btn">
+        <a href="/cse-projects-list.html" target="_blank" class="btn btn-primary">More Projects</a>
+    </div>
+
+    <div class="container">
+        <label for="comment" name="comment">Have Doubt Comment Below</label>
+        <textarea id="comment"></textarea>
+        <button id="addComments">Add Comment</button>
+        <div id="allComments"></div>
+    </div>
+    <script src="js/comment.js"></script>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom links-list">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="main-context">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
+                        <!-- Content -->
+                        <h6 class="mb-3">
+                            <i class="fas fa-gem me-3"></i>MREC <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <small>Students Guide
+                            </small>
+                            <hr>
+                            <p>
+                                This is website for beginners who wants to start their good startup of their carrier
+                                <br>
+                                <hr>
+                                Official website for Vishesh 2k21
+                            </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-3">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">mrec.ac.in</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecacademics.com</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecstudentguide.com</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecexams.com</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Medchal,Hyderabad</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            college@mrec.ac.in
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 91 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 91 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 copyright-mrec" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="#">MREC</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script>(function () { var js, fs, d = document, id = "tars-widget-script", b = "https://tars-file-upload.s3.amazonaws.com/bulb/"; if (!d.getElementById(id)) { js = d.createElement("script"); js.id = id; js.type = "text/javascript"; js.src = b + "js/widget.js"; fs = d.getElementsByTagName("script")[0]; fs.parentNode.insertBefore(js, fs) } })(); window.tarsSettings = { "convid": "2nmLJr" };</script>
+
+</html>

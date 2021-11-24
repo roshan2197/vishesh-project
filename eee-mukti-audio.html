@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/index.js"></script>
+    <script src="js/index.js"></script>
+    <title>Projects</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar_top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> <strong>MREC</strong> <br><small>Students Guide</small> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects List
+                        </a>
+                        <ul class="dropdown-menu bg-light" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="cse-projects-list.html">CSE</a>
+                            <a class="dropdown-item" href="ece-projects-list.html">ECE</a>
+                            <a class="dropdown-item" href="eee-projects-list.html">EEE</a>
+                            <a class="dropdown-item" href="it-projects-list.html">IT</a>
+                            <a class="dropdown-item" href="mec-projects-list.html">MEC</a>
+                            <a class="dropdown-item" href="civil-projects-list.html">CIVIL</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="references.html">References</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="main-content">
+        <h1>4-Channel Multi Mode Audio Amplifier</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tpWRLjN4sJk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <p>Sometimes we need configurable multichannel amplifiers for experiments or for use in offices or schools. Here
+            is a multi mode audio amplifier circuit based on TDA1554Q, configured for multi-mode function with four
+            channel outputs.</p>
+        <img src="images/multi1.jpg" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+
+        <h3>Multi mode audio amplifier circuit
+        </h3>
+
+        <img src="images/multi2.jpg" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+        <p>
+            The circuit of the simple 4-channel multi mode audio amplifier is shown in Fig. 1. It has four channels and
+            each channel can provide around 11W over a load of 2-ohms and around 6W over a load of 4-ohms. The circuit
+            will also work with loads of 4-ohms to 16-ohms.
+        </p>
+        <h3>Mode selection</h3>
+        <p>
+            The multi-mode function includes single-channel and bridge-tied load (BTL) modes. These are controlled using
+            switches S1 and S2. In bridge mode, output power can be around 22W on a 4-ohm load with a good heat-sink,
+            power supply and montage. <br>
+
+            Gain of each channel is fixed at 20dB in single-channel mode and 26dB in BTL mode. <br>
+
+            Input resistance of each channel of TDA1554Q amplifier (IC1) is around 60-kilo-ohm. When two or four inputs
+            are paralleled, resistance is reduced by two or four times. Consequently, input capacitors C1 through C4
+            should have enough capacity to give the required sound in the low-frequency range.
+        </p>
+        <img src="images/multi3.jpg" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+        <img src="images/multi4.jpg" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+        <img src="images/multi5.jpg" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+        <img src="images/multi6.jpg" alt="img" style="height: 100%; width: 100% !important; margin: 0 0 30px 0; ">
+        <h3>Power supply</h3>
+        <p>The circuit for the power supply is shown in Fig. 2. Transformer X1 used during testing was rated at 12V AC, 6A.
+            Ratings for X1 can be up to 8A and diodes should preferably be Schotky or other low-drop diodes with 10A rating.</p>
+
+
+    </div>
+    </div>
+
+    <div class="code-btn">
+        <a href="/cse-projects-list.html" target="_blank" class="btn btn-primary">More Projects</a>
+    </div>
+
+    <div class="container">
+        <label for="comment" name="comment">Have Doubt Comment Below</label>
+        <textarea id="comment"></textarea>
+        <button id="addComments">Add Comment</button>
+        <div id="allComments"></div>
+    </div>
+    <script src="js/comment.js"></script>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom links-list">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="main-context">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-3">
+                        <!-- Content -->
+                        <h6 class="mb-3">
+                            <i class="fas fa-gem me-3"></i>MREC <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <small>Students Guide
+                            </small>
+                            <hr>
+                            <p>
+                                This is website for beginners who wants to start their good startup of their carrier
+                                <br>
+                                <hr>
+                                Official website for Vishesh 2k21
+                            </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-3">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">mrec.ac.in</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecacademics.com</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecstudentguide.com</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">mrecexams.com</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-3">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3"></i> Medchal</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            college@mrec.ac.in
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 91 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 91 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 copyright-mrec" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="#">MREC</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script>(function () { var js, fs, d = document, id = "tars-widget-script", b = "https://tars-file-upload.s3.amazonaws.com/bulb/"; if (!d.getElementById(id)) { js = d.createElement("script"); js.id = id; js.type = "text/javascript"; js.src = b + "js/widget.js"; fs = d.getElementsByTagName("script")[0]; fs.parentNode.insertBefore(js, fs) } })(); window.tarsSettings = { "convid": "2nmLJr" };</script>
+
+</html>

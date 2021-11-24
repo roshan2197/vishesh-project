@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 500;
+  padding: 30px 0 0 0;
+}
+
+.accordion {
+  box-shadow: 1px 2px 15px 1px rgba(105, 105, 105, 0.404);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 0;
+  width: 100% !important;
+}
+
+.accordion p {
+  margin: 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .blockquote h1:after {
+  bottom: -60.5px;
+} */
+
+.blockquote-wrapper {
+  margin-top: -320px !important;
+}
+
+.navbar-brand {
+  padding-top: 5px;
+}
+
+.course-head {
+  margin-top: -50px;
+}
